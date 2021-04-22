@@ -26,15 +26,5 @@ function db_connect(){
   return $pdo;
 
 
-  //sakura
-  // try {
-  //   $dsn = 'mysql:dbname=makeyouhappy_smooz;host=mysql57.makeyouhappy.sakura.ne.jp;charset=utf8;unix_socket=/tmp/mysql.sock';
-  //   $user = 'makeyouhappy';
-  //   $password = 'D4e74a2ue-cQ';
-  //   $pdo = new PDO($dsn, $user, $password);
-  // } catch (PDOException $e) {
-  //   exit('DbConnectError:'.$e->getMessage());
-  // }
-  // return $pdo;
 }
 ?>
