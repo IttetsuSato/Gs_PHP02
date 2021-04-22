@@ -1,0 +1,104 @@
+#btn_login{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 10px;
+  background-color: #326bff;
+  color: #fff;
+  width: 300px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+#btn_login:hover{
+  background-color: #5588ff;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2 );
+}
+#btn_account{
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 10px;
+  background-color: #fff;
+  color: #326bff;
+  width: 300px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 2px #326bff;
+  transition: 0.5s;
+}
+#btn_account:hover{
+  background-color: #eee;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2 );
+}
+.form_area{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  text-align: center;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.form_area.active{
+  display: block;
+}
+.form_title{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 100px auto 80px;
+}
+.batsu{
+  position: fixed;
+  top: 80px;
+  right: 150px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #333;
+  transition: 0.5s;
+}
+.batsu:hover{
+  transform: rotate(180deg);
+  color: #326bff;
+}
+.form_area label{
+  border-bottom: solid 1px #aaa;
+}
+.form_area .label{
+  display: inline-block;
+  font-size: 16px;
+  padding: 2px;
+  color: #aaa;
+  width: 100px;
+}
+.form_area input{
+  width: 300px;
+  height: 20px;
+  padding: 2px;
+  outline: none;
+  border: none;
+}
+input.btn_sakusei{
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #326bff;
+  color: #fff;
+  width: 300px;
+  height: auto;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+input.btn_sakusei:hover{
+  background-color: #5588ff;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2 );
+}

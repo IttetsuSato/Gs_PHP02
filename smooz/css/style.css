@@ -1,0 +1,265 @@
+
+main{
+  display: flex;
+}
+/* ---------------------------
+ヘッダー
+--------------------------- */
+header{
+  width: 100%;
+  height: 40px;
+  background-color: #326bff;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logout{
+  text-decoration: none;
+  color: #fff;
+}
+/* ---------------------------
+プロフィール
+--------------------------- */
+.prof_form{
+  display: none;
+}
+
+/* ---------------------------------------------
+グループ
+------------------------------------------ */
+.group_section{
+  width: 20%;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2 );
+  height: 100%;
+}
+.group{
+  padding: 20px;
+  display: flex;
+}
+
+.group_img{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.group_name{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-left: 10px;
+  color: #333;
+}
+.output{
+  height: 600px;
+  overflow-y: scroll;
+}
+/*スクロールバー全体*/
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/*スクロールバーの軌道*/
+::-webkit-scrollbar-track {
+border-radius: 10px;
+box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+/*スクロールバーの動く部分*/
+::-webkit-scrollbar-thumb {
+background-color: rgba(0, 0, 50, .5);
+border-radius: 10px;
+box-shadow:0 0 0 1px rgba(255, 255, 255, .5);
+}
+.group_plus{
+  font-size: 50px;
+  color: #326bff;
+}
+.group_form{
+  display: none;
+  position: fixed;
+  left: 20%;
+  top: 40px;
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.5s;
+}
+.group_form.active{
+  display: block;
+}
+.form_title{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 100px auto 80px;
+}
+.batsu{
+  position: fixed;
+  top: 80px;
+  right: 150px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #333;
+  transition: 0.5s;
+}
+.batsu:hover{
+  transform: rotate(180deg);
+  color: #326bff;
+}
+.form_area label{
+  border-bottom: solid 1px #aaa;
+}
+.form_area .label{
+  display: inline-block;
+  font-size: 16px;
+  padding: 2px;
+  color: #aaa;
+  width: 100px;
+  margin: 1em 0;
+}
+.form_area input{
+  width: 200px;
+  height: 20px;
+  padding: 2px;
+  outline: none;
+  border: none;
+}
+input.btn_sakusei{
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #326bff;
+  color: #fff;
+  width: 100px;
+  height: auto;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+input.btn_sakusei:hover{
+  background-color: #5588ff;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2 );
+}
+/* -------------------------------------------
+チャット
+------------------------------------------ */
+.invite_form{
+  padding: 10px;
+  box-shadow:0 0 2px rgba(0,0,0,0.2 );
+}
+.invite_form .label{
+  display: inline-block;
+  font-size: 16px;
+  padding: 2px;
+  color: #999;
+}
+.invite_form input{
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  padding: 2px;
+  outline: none;
+  border: solid 2px #aaa;
+  border-radius: 5px;
+}
+input.btn_invite{
+  display: inline-block;
+  padding: 6px;
+  background-color: #326bff;
+  color: #fff;
+  width: 100px;
+  height: auto;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+  margin-left: 20px;
+}
+.btn_invite:hover{
+  background-color: #5588ff;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2 );
+}
+.chat_section{
+  width: 40%;
+  height: 100%;
+}
+.chat_output{
+  padding: 10px;
+}
+.chat_block{
+  display: flex;
+  padding: 8px;
+}
+.chat_profimg{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.chat_content_area{
+  padding: 8px;
+}
+.chat_names{
+  display: flex;
+  margin-bottom: 10px;
+}
+.chat_name{
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-right: 10px;
+}
+.chat_indate{
+  font-size: 12px;
+  color: #999;
+}
+.fileInput,
+.submit_btn{
+  padding:5px;
+  box-sizing: border-box;
+}
+.fileInput i{
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #555;
+}
+.fileInput p{
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  /* font-weight: bold; */
+  font-size: 0.9rem;
+}
+.fileInput input,
+.submit_btn input{
+  display: none;
+}
+.submit_btn i{
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #326bff;
+}
+/* ----------------------------------------------
+ビデオ
+-------------------------------------------- */
+.video_section{
+  width: 40%;
+}
+#js_local_stream{
+  transform: scale(-1, 1);
+  max-height: 200px;
+}
+#js_remote_streams{
+  max-height: 600px;
+  overflow-y: scroll;
+}
+#js_room_id{
+  display: none;
+}
+
